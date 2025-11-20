@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet New People</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    screens: {
+                        'xs': {'max': '480px'},
+                        'xxs': {'max': '267px'},
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="m-0 h-screen bg-[#f6f7fb] font-poppins flex flex-col justify-between items-center overflow-hidden">
+
+<header class="w-full flex justify-center items-center pt-20">
+    <img
+            src="https://uploads.onecompiler.io/442yvb7h8/442yu7s7s/1000000995.png"
+            alt="Meet New People Illustration"
+            class="w-[70%] max-w-[240px] transition-all duration-200 xs:w-[80%]"
+    />
+</header>
+
+<main class="flex-1 flex flex-col items-center justify-center text-center px-6 -mt-2">
+    <div class="bg-[#ff5a5f] text-white font-semibold text-[14px] py-2 px-1 rounded w-[70%] mb-3 transition-all duration-200 xs:text-[12px] xs:w-[80%]">
+        MEET NEW PEOPLE
+    </div>
+
+    <p class="text-[#555] text-[12px] leading-[1.4] w-[90%] mx-auto xs:text-[7px] xs:w-[95%] text-center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia
+        tellus quis est pharetra fermentum. Curabitur dapibus neque id lacus
+        hendrerit rhoncus. Vivamus quis pretium metus. Praesent varius tortor sit
+        amet quam eleifend hendrerit. Vivamus pharetra ultrices diam vel volutpat.
+        Praesent molestie lobortis sodales. Sed volutpat tempus orci.
+    </p>
+</main>
+
+<footer class="w-full bg-[#f6f7fb] flex justify-between items-center px-[15px] pb-[25px] pt-[15px] fixed bottom-0 left-0">
+
+    <button class="
+      bg-[#f0f0f0] text-[#555] font-semibold
+      w-[65px] py-[7px] text-[8px]
+      transition-all duration-200 ease-in-out
+      active:scale-95 active:bg-[#d6d6d6]
+      xxs:w-[clamp(50px,8vw,65px)] xxs:text-[clamp(8px,2.5vw,10px)] xxs:py-[clamp(5px,2vw,7px)]
+    ">
+        SKIP
+    </button>
+
+    <div class="flex gap-[12px] justify-center items-center absolute left-1/2 -translate-x-1/2 bottom-[33px] transition-all duration-200 xxs:gap-[clamp(5px,2vw,8px)]">
+        <div class="w-[7px] h-[7px] bg-[#ff5a5f]"></div>
+        <div class="w-[7px] h-[7px] bg-[#ddd]"></div>
+        <div class="w-[7px] h-[7px] bg-[#ddd]"></div>
+    </div>
+
+    <button class="
+      bg-[#ff5a5f] text-white font-semibold
+      w-[65px] py-[7px] text-[8px]
+      transition-all duration-200 ease-in-out
+      active:scale-95 active:bg-[#e14c50]
+      xxs:w-[clamp(50px,8vw,65px)] xxs:text-[clamp(8px,2.5vw,10px)] xxs:py-[clamp(5px,2vw,7px)]
+    ">
+        NEXT
+    </button>
+
+</footer>
+</body>
+</html>
